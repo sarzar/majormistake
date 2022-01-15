@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import Popup from './Popup';
 import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 const majors = [
     {
@@ -35,13 +36,13 @@ export default function Home() {
     };
     return (
         <div className="homepage-container">
-            <div className="logo-container">
+            <div id="container-flex" className="logo-container">
                 <img src="major mistake.png" />
             </div>
-            <div className="username-container">
+            <div id="container-flex" className="username-container">
                 <TextField id="standard-basic" label="Username" variant="standard" />
             </div>
-            <div className="majorselect-container">
+            <div id="container-flex" className="majorselect-container">
                 <TextField
                     id="standard-select-currency"
                     select
@@ -58,31 +59,35 @@ export default function Home() {
                     ))}
                 </TextField>
             </div>
-            <div className="button-container">
-                <button onClick={() => setPopups(true)}>Create Game</button>
+            <div id="container-flex" className="buttons-container">
 
-                <div className="popup-content">
-                    <Popup trigger={popups} setTrigger={setPopups}>
-                        <h3>Create Game</h3>
-                        <p>Code: XGTSR</p>
-                    </Popup>
+           
+                    <Button onClick={() => setPopups(true)}onClick={() => setPopups(true)} variant="outlined" >Create Game</Button>
 
-                    <button onClick={() => setPopup(true)}>Join Game</button>
+                    <div className="popup-content">
+                        <Popup trigger={popups} setTrigger={setPopups}>
+                            <h3>Create Game</h3>
+                            <p>Code: XGTSR</p>
+                        </Popup>
+                
+                        <Button onClick={() => setPopup(true)} variant="outlined">Join game</Button>
 
-                <div className="popup-content">
-                    <Popup trigger={popup} setTrigger={setPopup}>
-                        <h3>Join Game</h3>
-                        <p>Input Code: </p>
-                    </Popup>
-                </div>
-                </div>
-                <div className = "howitworksbutton-container">
-                    <Link to = "/howtoplay">
-                        <button> How to Play</button>
-                    </Link>
+                        <div className="popup-content">
+                            <Popup trigger={popup} setTrigger={setPopup}>
+                                <h3>Join Game</h3>
+                                <p>Input Code: </p>
+                            </Popup>
+                        </div>
                     
                 </div>
             </div>
+            <div id="container-flex" className="howitworksbutton-container">
+                <Link to="/howtoplay">
+                    <button> How to Play</button>
+                </Link>
+
+            </div>
+
         </div>
     );
 }

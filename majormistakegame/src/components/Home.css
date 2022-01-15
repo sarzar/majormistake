@@ -19,11 +19,13 @@
 .buttons-container{
     display: flex;
     flex-direction: row;
-    
+    justify-content:space-between;
+    width:350px;
+    padding-right: 23px;
 }
 button{
 transform: scale(2);
-padding-left: 10px;
+
 }
 .majorselect-container{
     transform: scale(2);

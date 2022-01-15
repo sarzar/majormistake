@@ -102,7 +102,7 @@ export default function Home() {
             <div id="container-flex" className="buttons-container">
 
            
-                    <Button onClick={() => setPopups(true)}onClick={() => setPopups(true)} variant="outlined" >Create Game</Button>
+                    <button onClick={() => setPopups(true)}onClick={() => setPopups(true)} variant="outlined" >Create Game</button>
 
                     <div className="popup-content">
                         <Popup trigger={popups} setTrigger={setPopups}>
@@ -110,7 +110,7 @@ export default function Home() {
                             <p>Code: XGTSR</p>
                         </Popup>
                 
-                        <Button onClick={() => setPopup(true)} variant="outlined">Join game</Button>
+                        <button onClick={() => setPopup(true)} variant="outlined" >Join game</button>
 
                         <div className="popup-content">
                             <Popup trigger={popup} setTrigger={setPopup}>

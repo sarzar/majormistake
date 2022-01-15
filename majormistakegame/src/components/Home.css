@@ -1,3 +1,15 @@
-.Homepage{
+.homepage-container{
     color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+.logo-container{
+    transform: scale(0.3);
+}
+.username-container{
+    transform: scale(2)
+     
 }

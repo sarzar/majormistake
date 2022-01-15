@@ -115,7 +115,11 @@ export default function Home() {
                         <div className="popup-content">
                             <Popup trigger={popup} setTrigger={setPopup}>
                                 <h3>Join Game</h3>
-                                <p>Input Code: </p>
+                                <p>Input Code: </p> 
+                                <input
+                                type="text"
+                                placeholder="Enter code..."
+                                /> 
                             </Popup>
                         </div>
                     

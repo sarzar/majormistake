@@ -25,6 +25,46 @@ const majors = [
         value: 'B',
         label: 'Biology',
     },
+    {
+        value: 'H',
+        label: 'History',
+    },
+    {
+        value: 'CS',
+        label: 'Computer Science',
+    },
+    {
+        value: 'ENG',
+        label: 'Engineering',
+    },
+    {
+        value: 'BU',
+        label: 'Business',
+    },
+    {
+        value: 'SS',
+        label: 'Social sciences',
+    },
+    {
+        value: 'D',
+        label: 'Dentistry',
+    },
+    {
+        value: 'F',
+        label: 'Film studies',
+    },
+    {
+        value: 'G',
+        label: 'Geography',
+    },
+    {
+        value: 'P',
+        label: 'Physics',
+    },
+    {
+        value: 'PH',
+        label: 'Philosophy',
+    },
 ];
 
 export default function Home() {

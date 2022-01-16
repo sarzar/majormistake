@@ -21,9 +21,9 @@ export default function Game() {
                 <div className="popup-content">
                     <Popup trigger={popupe} setTrigger={setPopupe}>
                         <h3>GUESS</h3>
-                        <p>Code: XGTSR</p>
+                        <input className="guessfield" type="text" placeholder="Enter your guess..."/>
                         <Link to="gamepage">
-                            <button>Create</button>
+                            <button className="submitGuess">Submit</button>
                         </Link>
                     </Popup>
                 </div>

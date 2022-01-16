@@ -1,6 +1,7 @@
 ﻿import React, {useEffect} from "react";
 import "./client.css";
-
+import "./Home.css";
+import '../App.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Popup from './Popup';

@@ -21,8 +21,8 @@
 }
 
 .Question-container{
-<<<<<<< HEAD
-    top: 800px;
+    top: 100px;
+    position:absolute;
 }
 
 .guessfield{
@@ -34,8 +34,6 @@
     width: 50px;
     height: 17px;
     font-size: 10px;
-=======
    position:absolute;
    top: 100px;
->>>>>>> c195c57c2ec59aac749ef858ed85c0b5ab2bef73
 }

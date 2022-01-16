@@ -108,6 +108,9 @@ export default function Home() {
                         <Popup trigger={popups} setTrigger={setPopups}>
                             <h3>Create Game</h3>
                             <p>Code: XGTSR</p>
+                            <Link to ="gamepage">
+                                    <button>Create</button>
+                                </Link>
                         </Popup>
                 
                         <button onClick={() => setPopup(true)} variant="outlined" >Join game</button>
@@ -120,6 +123,9 @@ export default function Home() {
                                 type="text"
                                 placeholder="Enter code..."
                                 /> 
+                                <Link to ="gamepage">
+                                    <button>Join</button>
+                                </Link>
                             </Popup>
                         </div>
                     

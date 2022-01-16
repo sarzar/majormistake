@@ -18,7 +18,9 @@
     padding: 32px;
     width: 100%;
     max-width: 640px;
-    background-color: #FFF;
+    /* background-color: rgb(15, 104, 42); */
+    background: rgb(11,43,5);
+background: linear-gradient(90deg, rgba(11,43,5,1) 10%, rgba(29,157,26,1) 50%, rgba(11,43,5,1) 90%);
     z-index: 1000;
 
     font-size: 40px;

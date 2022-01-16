@@ -37,7 +37,7 @@ transform: scale(2);
 
 body {
  background-image: url('http://backgroundlabs.com/files/chalkboard-background-2499.jpg%27');
-  background-size: "cover";
+  background-size: cover;
   height: 100vh;
  
   

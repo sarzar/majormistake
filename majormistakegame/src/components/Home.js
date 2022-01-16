@@ -42,7 +42,7 @@ const majors = [
         label: 'Business',
     },
     {
-        value: 'SS',
+        value: 'SOC',
         label: 'Social sciences',
     },
     {
@@ -68,11 +68,11 @@ const majors = [
 ];
 
 export default function Home() {
-    const [major, setmajor] = React.useState('M');
+    const [major, setMajor] = React.useState('M');
     const [popup, setPopup] = useState(false);
     const [popups, setPopups] = useState(false);
     const handleChange = (event) => {
-        setmajor(event.target.value);
+        setMajor(event.target.value);
     };
     return (
         <div className="homepage-container">

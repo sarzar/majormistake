@@ -1,65 +1,66 @@
-.homepage-container{
+.homepage-container {
     color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-   
     gap: 70px;
 }
 
 
-.logo-container{
+.logo-container {
     height: 300px
 }
-.username-container{
+
+.username-container {
     transform: scale(2)
 }
 
 
-.buttons-container{
+.buttons-container {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    width:500px;
+    justify-content: space-between;
+    width: 500px;
     padding-right: 23px;
 }
-button{
-transform: scale(2);
-cursor: pointer;
+
+button {
+    transform: scale(2);
+    cursor: pointer;
 }
-.majorselect-container{
+
+.majorselect-container {
     transform: scale(2);
 }
+
 .howitworksbutton-container {
     margin-top: -90px;
 }
 
 body {
- background-image: url('http://backgroundlabs.com/files/chalkboard-background-2499.jpg%27');
-  background-size: cover;
-  height: 100vh;
- 
-  
-  background-repeat:no-repeat;
+    background-image: url('http://backgroundlabs.com/files/chalkboard-background-2499.jpg%27');
+    background-size: cover;
+    height: 100vh;
+
+
+    background-repeat: no-repeat;
 }
 
-.creategameimage{
+.creategameimage {
     border: none;
     background: none;
     /* transform: scale(0.45); */
 }
 
-.guessfields{
+.guessfields {
     width: 175px;
- height: 25px;
+    height: 25px;
 }
 
-.submitGuesses{
+.submitGuesses {
     width: 50px;
     height: 17px;
     font-size: 10px;
-    position:absolute;
+    position: absolute;
     top: 312px;
 }
-

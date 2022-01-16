@@ -4,9 +4,9 @@ import "./client.css";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Popup from './Popup';
-import io from "socket.io-client";
+import io from 'socket.io-client';
 
-export default function Game() {
+export default function client() {
     const [popupe, setPopupe] = useState(false);
     const [userID, setUserID] = useState();
     const [message, setMessage] = useState("");

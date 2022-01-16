@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from "./components/Home"
 import Help from "./components/Howtoplay"
 import Game from "./components/Game"
+import Client from "./components/client"
 
 const rootElement = document.getElementById("root");
     ReactDOM.render(
@@ -15,6 +16,7 @@ const rootElement = document.getElementById("root");
         <Route exact path="/" element={<Home/>}/>
         <Route path="/howtoplay" element={<Help/>} />
         <Route path="/gamepage" element={<Game/>} />
+        <Route path="/test" element={<Client/>} />
       </Routes>
       </BrowserRouter>,
       rootElement

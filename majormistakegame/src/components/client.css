@@ -1,0 +1,55 @@
+﻿.game-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+.wingiveupbuttons-container{
+
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.spacer{
+    flex: 0.8;
+}
+
+.Question-container{
+    top: 100px;
+    position:absolute;
+}
+
+.guessfield{
+    width: 175px;
+    height: 25px;
+}
+
+.submitGuess{
+    width: 50px;
+    height: 17px;
+    font-size: 10px;
+    position:absolute;
+    top: 219px;
+}
+
+.answer-box{
+    width: 350px;
+    height: 55px;
+}
+.answer-container{
+    top: 600px;
+    position: absolute;
+}
+
+.opponent-answer{
+    font-size: 30px;
+}
+.opponentanswer-container{
+    top: 650px;
+    position:absolute;
+}

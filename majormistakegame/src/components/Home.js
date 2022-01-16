@@ -102,7 +102,7 @@ export default function Home() {
             <div id="container-flex" className="buttons-container">
 
            
-                    <button onClick={() => setPopups(true)}onClick={() => setPopups(true)} variant="outlined" >Create Game</button>
+                    <button className="creategameimage" onClick={() => setPopups(true)}onClick={() => setPopups(true)} variant="outlined" ><img src='creategamebutton.png'/></button>
 
                     <div className="popup-content">
                         <Popup trigger={popups} setTrigger={setPopups}>
@@ -110,7 +110,8 @@ export default function Home() {
                             <p>Code: XGTSR</p>
                         </Popup>
                 
-                        <button onClick={() => setPopup(true)} variant="outlined" >Join game</button>
+                        <button className="creategameimage" onClick={() => setPopup(true)} variant="outlined" ><img src="joingamebutton.png" /></button>
+                        {/* <img onClick={() => setPopup(true)} variant="outlined" src='creategamebutton.png' /> */}
 
                         <div className="popup-content">
                             <Popup trigger={popup} setTrigger={setPopup}>
@@ -127,7 +128,7 @@ export default function Home() {
             </div>
             <div id="container-flex" className="howitworksbutton-container">
                 <Link to="/howtoplay">
-                    <button> How to Play</button>
+                    <button className="creategameimage"> <img src="howtoplaybutton.png" /></button>
                 </Link>
 
             </div>

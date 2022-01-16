@@ -9,7 +9,7 @@
 .wingiveupbuttons-container{
  
     display: flex;
- align-self: stretch;
+    align-self: stretch;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -20,6 +20,19 @@
 }
 
 .Question-container{
+    top: 100px;
+    position:absolute;
+}
+
+.guessfield{
+    width: 175px;
+ height: 25px;
+}
+
+.submitGuess{
+    width: 50px;
+    height: 17px;
+    font-size: 10px;
    position:absolute;
    top: 100px;
 }

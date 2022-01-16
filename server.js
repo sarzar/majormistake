@@ -8,7 +8,7 @@ const io = socket(server);
 
 io.on("connection", socket => {
     socket.emit('userID', socket.id);
-    socket.onabort('send message', body => {
+    socket.on('send message', body => {
         io.emit('message', body);
     });
 });

@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from "./components/Home"
 import Help from "./components/Howtoplay"
 import Game from "./components/Game"
-import Client from "./components/client"
+import Client from "./components/Client"
 
 const rootElement = document.getElementById("root");
     ReactDOM.render(

@@ -1,21 +1,46 @@
 ﻿import React, {useEffect} from "react";
-import "./client.css";
+import "./Client.css";
 import "./Home.css";
 import '../App.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useRef } from "react";
 import Popup from './Popup';
 import io from 'socket.io-client';
 
-export default function client() {
+export default function Client() {
     const [popupe, setPopupe] = useState(false);
     const [userID, setUserID] = useState();
+    const [messages, setMessages] = useState([]);
     const [message, setMessage] = useState("");
     
     const socketRef = useRef();
     
     useEffect(() => {
-        socketRef.current = io.connect('/');
+        socketRef.current = io.connect('http://localhost:3000/gamepage');
+        
+        socketRef.current.on("userID", id => {
+            setUserID(id);
+        });
+        
+        socketRef.current.on("message", (message) => {
+            console.log("here");
+            receivedMessage(message);
+        });
+        
+        function receivedMessage(message) {
+            setMessages(oldMsgs => [oldMsgs.concat.apply.oldMsgs, message]);
+        }
+        
+        function sendMessage(e) {
+            e.preventDefault();
+            const messageObject =  {
+                body: message, 
+                id: userID
+            };
+            setMessage("");
+            socketRef.current.emit("send message", messageObject);
+        }
     }
 )
     
@@ -42,14 +67,14 @@ export default function client() {
 
             </div>
             <div className="Question-container">
-                
             </div>
 
             <div className="answer-container">
                 <input className="answer-box"type="text" placeholder="Enter your answer..."/> <br/>
             </div>
             <div className="opponentanswer-container">
-                <p className="opponent-answer">Opponent's Answer: Waiting for opponent to answer...</p>
+                <p className="opponent-answer">Opponent's Answer: {messages[messages.length - 1]}</p>
+                
             </div>
 
         </div>

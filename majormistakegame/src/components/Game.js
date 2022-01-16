@@ -33,6 +33,14 @@ export default function Game() {
             <div className="Question-container">
                 <img src="art.png" />
             </div>
+
+            <div className="answer-container">
+            <input className="answer-box"type="text" placeholder="Enter your answer..."/> <br/>
+            </div>
+            <div className="opponentanswer-container">
+            <p className="opponent-answer">Opponent's Answer: Waiting for opponent to answer...</p>
+            </div>
+
         </div>
 
 

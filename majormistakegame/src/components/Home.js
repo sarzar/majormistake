@@ -121,12 +121,12 @@ export default function Home() {
                                 <h3>Join Game</h3>
                                 <p>Input Code: </p> 
                                 <input
-                                className="guessfield"
+                                className="guessfields"
                                 type="text"
                                 placeholder="Enter code..."
                                 /> 
                                 <Link to ="gamepage">
-                                    <button className="submitGuess">Join</button>
+                                    <button className="submitGuesses">Join</button>
                                 </Link>
                             </Popup>
                         </div>
